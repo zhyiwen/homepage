@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>个人主页</title>
+    {css href="/static/css/bootstrap.min.css,/static/css/font-awesome.min.css,/static/css/main.css,/static/css/style.css" /}
+</head>
+<body>
+
+<header>
+    <div class="head-bg">
+        <h3>艺文的个人主页</h3>
+    </div>
+    <div class="container nav_style">
+        <nav class="navbar navbar-zyw" role="navigation">
+            <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav texta-c">
+                    <li><a href=" {:url('/index/index/index')}">我的主页</a></li>
+                    <li><a href="{:url('/index/index/resume')}">个人简历</a></li>
+                    <li><a href="">我的文章</a></li>
+                    <li class="active"><a href="{:url('/index/index/mycase')}">我的案例</a></li>
+                    <li><a href="">联系我</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <div class="mycase-main">
+        <section id="one" class="main">
+            <div class="spotlight">
+                <div class="content">
+                    <header class="major">
+                        <h2>一手单</h2>
+                    </header>
+                    <p>电商类网站，我负责页面代码的编写，优化网站前端性能，页面通过标准校验，兼容各主流浏览器。</p>
+                    <p>一手单专门为淘宝客联盟提供优质好的产品选品方案，节省时间及人力成本，提供业务包括领券优惠精选、鹊桥精选，以及淘宝客运营干货，帮助大家实现利益最大化，同时帮助淘宝卖家打造爆款，带动销售</p>
+                    <ul class="actions">
+                        <li><a href="http://www.yishoudan.com" class="button" target="_blank">项目地址</a></li>
+                        <!-- <li><a href="{{'generic'|page}}" class="button">网页源代码</a></li> -->
+                    </ul>
+                </div>
+                <span class="image"><img src="https://img.alicdn.com/imgextra/i3/2590951958/TB21PwokznD8KJjSspbXXbbEXXa_!!2590951958.png" alt="image" /></span>
+            </div>
+        </section>
+        <section id="two" class="main">
+            <div class="spotlight">
+                <div class="content">
+                    <header class="major">
+                        <h2>淘客放单中心</h2>
+                    </header>
+                    <p>我负责页面代码的编写，优化网站前端性能，页面通过标准校验，兼容各主流浏览器。</p>
+                    <p>页面采用前端框架amazeUI编写。主要用于淘客向一手单放单。通过淘宝天猫商品链接，查出商品的其他信息，例如价格、销量、剩余数量等。</p>
+                    <ul class="actions">
+                        <li><a href="http://sj.yishoudan.com" class="button" target="_blank">项目地址</a></li>
+                        <!-- <li><a href="https://code.aliyun.com/echowht/ectouch" class="button" target="_blank">源代码(需要登录code.aliyun.com)</a></li> -->
+                    </ul>
+                </div>
+                <span class="image"><img src="https://img.alicdn.com/imgextra/i1/2590951958/TB2EDrzdjgy_uJjSZR0XXaK5pXa_!!2590951958.png" alt="image" /></span>
+            </div>
+        </section>
+        <section id="three" class="main">
+            <div class="spotlight">
+                <div class="content">
+                    <header class="major">
+                        <h2>万能淘客</h2>
+                    </header>
+                    <p>通过现有模板，打造公司企业站。我主要负责代码编写，修改。该企业站为静态网站，不涉及后台语言编写。</p>
+                    <p>公司产品介绍企业站。罗列公司选品网站、公司CMS、公司软件以及浏览器插件。</p>
+                    <ul class="actions">
+                        <li><a href="http://wntaoke.com" class="button" target="_blank">项目地址</a></li>
+                        <!-- <li><a href="https://code.aliyun.com/echowht/ectouch" class="button" target="_blank">源代码(需要登录code.aliyun.com)</a></li> -->
+                    </ul>
+                </div>
+                <span class="image"><img src="https://img.alicdn.com/imgextra/i3/2590951958/TB2l4wsd8LN8KJjSZFPXXXoLXXa_!!2590951958.png" alt="image" /></span>
+            </div>
+        </section>
+        <section id="four" class="main">
+            <div class="spotlight">
+                <div class="content">
+                    <header class="major">
+                        <h2>华松易购</h2>
+                    </header>
+                    <p>电商类网站，负责前端的重构，基于ectouch的一个电商网站，微信商城。三级分销，积分换礼等功能。</p>
+                    <ul class="actions">
+                        <li><a href="http://hsyg58.com" class="button" target="_blank">项目地址</a></li>
+                        <li><a href="https://code.aliyun.com/echowht/ectouch" class="button" target="_blank">源代码(需要登录code.aliyun.com)</a></li>
+                    </ul>
+                </div>
+                <span class="image"><img src="https://img.alicdn.com/imgextra/i4/2590951958/TB2bMnPkv2H8KJjy0FcXXaDlFXa_!!2590951958.jpg" alt="image" /></span>
+            </div>
+        </section>
+        <section id="five" class="main">
+            <div class="spotlight">
+                <div class="content">
+                    <header class="major">
+                        <h2>个人微博</h2>
+                    </header>
+                    <p>业余学习ThinkPHP5做的小项目,基于ThinkPHP5，Bootstrap构造的一个仿微博系统。目前已实现数据的增删改。提供两套模版切换。</p>
+                    <ul class="actions">
+                        <li><a href="http://weibo.blskye.com" class="button" target="_blank">项目地址</a></li>
+                        <li><a href="https://github.com/zhyiwen/weibo" class="button" target="_blank"><i class="fa fa-github"></i>&nbsp;Github</a></li>
+                    </ul>
+                </div>
+                <span class="image"><img src="https://img.alicdn.com/imgextra/i3/2590951958/TB2BE.Lkx6I8KJjy0FgXXXXzVXa_!!2590951958.png" alt="image" /></span>
+            </div>
+        </section>
+        <section id="six" class="main">
+            <div class="spotlight">
+                <div class="content">
+                    <header class="major">
+                        <h2>婚恋网站</h2>
+                    </header>
+                    <p>企业站类，近日新增项目，目前尚在开发阶段，只提供部分静态页。基于Laravel框架的一个开源的CMS（October）</p>
+                    <ul class="actions">
+                        <li><a href="http://wp.blskye.com" class="button" target="_blank">项目测试地址</a></li>
+                        <li><a href="https://code.aliyun.com/echowht/web_mengyuan" class="button" target="_blank">静态页源码(需要登录code.aliyun.com)</a></li>
+                    </ul>
+                </div>
+                <span class="image"><img src="https://img.alicdn.com/imgextra/i2/2590951958/TB2txPVkC_I8KJjy0FoXXaFnVXa_!!2590951958.png" alt="image" /></span>
+            </div>
+        </section>
+    </div>
+</div>
+{js href="/static/js/jquery.min.js,/static/js/bootstrap.min.js" /}
+</body>
+</html>
