@@ -4,7 +4,7 @@
     <div class="index-main">
         <div class="index-info-search">
             <div class="index-search">
-                <form action="">
+                <form action="http://www.baidu.com/baidu" target="_blank">
                     <div class="input-group">
                         <div class="input-group-btn">
                             <button type="button" class="btn btn-link
@@ -32,9 +32,10 @@
                                 </li>
                             </ul>
                         </div><!-- /btn-group -->
-                        <input type="text" class="form-control">
+                        <input name=tn type=hidden value=baidu>
+                        <input type="text" class="form-control" name=word size=30 id="baidusearch">
                         <span class="input-group-btn">
-                            <button class="btn btn-info" type="button">搜索</button>
+                            <button class="btn btn-info" type="submit">搜索</button>
                         </span>
                     </div>
                 </form>
