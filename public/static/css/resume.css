@@ -1,0 +1,17 @@
+.myresume{background: #fff; margin-bottom: 20px;}
+.left-info1{width: 100%; padding: 40px 0; text-align: center;}
+.left1-img {width: 100px; overflow: hidden; background: #fff; margin: 0 auto;}
+.left1-img img{width: 100%;}
+.left-info1 h2{line-height: 26px;}
+.left-info1 p{ font-weight: 100; font-size: 13px; margin-top: 5px;}
+.left-info2{padding: 0 20px 50px;}
+.left-title{ line-height: 30px; }
+.left-title i{font-size: 15px; background: #5fb878; padding: 8px; border-radius: 50%; margin-right: 10px;}
+.item-cont{margin-left: 13px; padding-left: 15px; border-left: 3px solid #5fb878; font-size: 12px; }
+.item-cont p{line-height: 22px;}
+.item-cont p .p-hd{width: 48%; display: inline-block; }
+.item-cont p .layui-badge {height: 10px; line-height: inherit; padding: 0 4px; }
+.right-cont{padding: 40px 30px; background: #fff; /*border: 1px solid #dedede;*/ border-left: none;}
+.right-info1{}
+.right-info1 strong{ color:#009688; }
+.right-info1 p{text-indent: 2em; line-height: 25px;}

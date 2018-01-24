@@ -1,0 +1,20 @@
+body{margin: 0; padding: 0; font-family: "微软雅黑"; background: #feca97;}
+body, ul, ol, li, p, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd{margin: 0; padding: 0; border: 0; list-style: none; font-weight: normal; }
+.fl{float: left;}
+.fr{float: right;}
+i ,em{font-style: normal;}
+img{-ms-interpolation-mode:bicubic; max-width:100%;}/*防止windows缩放图片时，图像失真*/
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden; }
+.texta-c{text-align: center;}
+.mart-10{margin-top: 10px;}
+.home_icons{background-image: url("../images/home_icon.png"); display: inline-block;}
+
+/*头部*/
+.head-bg{height: 290px;  background: url(../images/head-bg.jpg) no-repeat top center;}
+.head-bg h3{ text-align: center; color: #fff; font-size: 32px; line-height: 290px; text-shadow: 0 2px 3px rgba(0,0,0,0.6);}
+/*导航*/
+.layui-nav {background-color: #fff; color: #444;}
+.layui-nav .layui-nav-item a {color: #999; color: rgba(0,0,0,.5);}
+.layui-nav .layui-nav-item a:hover, .layui-nav .layui-this a {color: #444;}
+.layui-nav .layui-nav-item {line-height: 45px;}
+.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after {height: 3px;}
