@@ -1,6 +1,6 @@
 <?php
 namespace app\admin\controller;
-
+use
 class Index
 {
     public function index()
