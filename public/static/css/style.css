@@ -197,37 +197,25 @@ ul.actions li:last-child {
 .info-list li .info-link:hover {
     color: #cc6600;
 }
-.article-cont{
-    background: #fafafa;
-    margin: 10px 0;
+.link-cont{
+    position: relative;
+    margin-bottom: 20px;
 }
-.article-cont a{
+.link-cont a{
     text-decoration: none;
+    display: block;
 }
-.article-cont .article-img{
-    width: 100%;
-    min-height: 116px;
-    max-height: 150px;
+.link-cont .media{
+    padding: 10px 0;
+    border-bottom: 1px dashed #dedede;
 }
-.article-cont .article-title{
-    color: #333;
-    line-height: 30px;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 0 5px;
-    overflow: hidden;
-    width: 100%;
-    word-break: keep-all;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+.link-cont .media .media-heading{
+    color: #494949;
+    font-size: 15px;
 }
-.article-cont .article-title:hover{
-    color: #cc6600;
-}
-.article-cont .article-intro{
-    color: #777;
+.link-cont .media p{
+    color: #858585;
     font-size: 12px;
-    padding: 0 5px 4px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
