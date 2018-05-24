@@ -15,4 +15,9 @@ class Ruler extends Controller
         $this->assign("admin","ruler_list");
         return $this->fetch();
     }
+    public function edit()
+    {
+        $this->assign("admin","ruler_edit");
+        return $this->fetch();
+    }
 }
