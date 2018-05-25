@@ -26,14 +26,15 @@
                 <a href="#"><i class="fa fa-link"></i> <span class="nav-label">网址管理</span> <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
                     <li {eq name="admin" value="ruler_list"} class="active" {/eq}><a href="{:url('/admin/ruler/index')}">网址列表</a></li>
-                    <li><a href="#">添加网址</a></li>
-                    <li><a href="#">分类管理</a></li>
+                    <li {eq name="admin" value="ruler_add"} class="active" {/eq}><a href="{:url('/admin/ruler/add')}">添加网址</a></li>
+                    <li {eq name="admin" value="ruler_setclass"} class="active" {/eq}><a href="{:url('/admin/ruler/set_class')}">分类管理</a></li>
                 </ul>
             </li>
             <li {eq name="admin" value="http"} class="active" {/eq}>
                 <a href="#"><i class="fa fa-internet-explorer"></i> <span class="nav-label">网页收藏</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
                     <li><a href="#">收藏列表</a></li>
+                    <li><a href="#">添加常用网站</a></li>
                     <li><a href="#">添加收藏</a></li>
                     <li><a href="#">分类管理</a></li>
                 </ul>

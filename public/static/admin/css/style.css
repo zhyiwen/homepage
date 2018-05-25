@@ -1839,12 +1839,6 @@ div.dt-button-info {
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
   font-size: 14px;
 }
-.ibox .btn{padding: 4px 12px; margin-top: 1px;}
-.ibox .table td .btn {
-  padding: 0px 12px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
 .form-control:focus,
 .single-line:focus {
   border-color: #1ab394 !important;

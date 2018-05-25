@@ -42,20 +42,21 @@
                         <div class="row">
                             <div class="col-sm-5 m-b-xs">
                                 <select class="input-sm form-control input-s-sm inline">
-                                    <option value="0">热门HOT</option>
+                                    <option value="0">全部</option>
                                     <option value="1">推荐网站</option>
                                     <option value="2">学习网站</option>
                                     <option value="3">学习文档</option>
                                 </select>
                                 <select class="input-sm form-control input-s-sm inline">
-                                    <option value="0">视频</option>
+                                    <option value="0">全部</option>
                                     <option value="1">邮箱</option>
                                     <option value="2">购物</option>
+                                    <option value="2">视频</option>
                                 </select>
-                                <button type="button" class="btn btn-w-m btn-primary">确定</button>
+                                <button type="button" class="btn btn-w-m btn-primary small-btn">确定</button>
                             </div>
                             <div class="col-sm-2">
-                                <a type="button" class="btn btn-w-m btn-primary" href="#"><i class="fa fa-plus"></i> 添加网址</a>
+                                <a type="button" class="btn btn-w-m btn-primary small-btn" href="{:url('/admin/ruler/add')}"><i class="fa fa-plus"></i> 添加网址</a>
                             </div>
                             <div class="col-sm-3 col-sm-offset-2">
                                 <div class="input-group"><input type="text" placeholder="Search" class="input-sm form-control"> <span class="input-group-btn">
@@ -134,5 +135,7 @@
     </div>
     {include file="public/_bottom" /}
 </div>
-
 {include file="public/_footer" /}
+{js href="/static/admin/js/plugins/nestable/jquery.nestable.js"}
+</body>
+</html>

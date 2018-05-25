@@ -20,4 +20,14 @@ class Ruler extends Controller
         $this->assign("admin","ruler_edit");
         return $this->fetch();
     }
+    public function add()
+    {
+        $this->assign("admin","ruler_add");
+        return $this->fetch();
+    }
+    public function set_class()
+    {
+        $this->assign("admin","ruler_setclass");
+        return $this->fetch();
+    }
 }

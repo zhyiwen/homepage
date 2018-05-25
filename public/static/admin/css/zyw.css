@@ -1,2 +1,13 @@
 .tuijian .fa-level-up{color: #1bb394}
 .tuijian .fa-trophy{color: #f8ac59}
+.ibox-content input[type="file"]{opacity: 0;}
+.ibox .small-btn.btn{padding: 4px 12px; margin-top: 1px;}
+.ibox .table td .btn {
+    padding: 0px 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.top-level{
+    padding: 0;
+    margin: 10px 15px 20px 0;
+}
