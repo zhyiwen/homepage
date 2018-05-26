@@ -33,9 +33,4 @@ class Link extends Controller
         $this->assign("admin","link_h_list");
         return $this->fetch();
     }
-    public function set_class()
-    {
-        $this->assign("admin","link_setclass");
-        return $this->fetch();
-    }
 }
