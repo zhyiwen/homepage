@@ -1,0 +1,141 @@
+{include file="public/_header" /}
+{css href="/static/admin/css/plugins/toastr/toastr.min.css,/static/admin/js/plugins/gritter/jquery.gritter.css" /}
+{include file="public/_nav" /}
+<div id="page-wrapper" class="gray-bg dashbard-1">
+    {include file="public/_top" /}
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            <h2>网页收藏</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="index.html">网址管理</a>
+                </li>
+                <li class="active">
+                    <strong>网页收藏</strong>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>列表管理</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#">Config option 1</a></li>
+                                <li><a href="#">Config option 2</a></li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-sm-5 m-b-xs">
+                                <select class="input-sm form-control input-s-sm inline">
+                                    <option value="0">全部</option>
+                                    <option value="1">推荐网站</option>
+                                    <option value="2">学习网站</option>
+                                    <option value="3">学习文档</option>
+                                </select>
+                                <select class="input-sm form-control input-s-sm inline">
+                                    <option value="0">全部</option>
+                                    <option value="1">邮箱</option>
+                                    <option value="2">购物</option>
+                                    <option value="2">视频</option>
+                                </select>
+                                <button type="button" class="btn btn-w-m btn-primary small-btn">确定</button>
+                            </div>
+                            <div class="col-sm-2">
+                                <a type="button" class="btn btn-w-m btn-primary small-btn" href="{:url('/admin/ruler/add')}"><i class="fa fa-plus"></i> 添加网址</a>
+                            </div>
+                            <div class="col-sm-3 col-sm-offset-2">
+                                <div class="input-group"><input type="text" placeholder="Search" class="input-sm form-control"> <span class="input-group-btn">
+                                        <button type="button" class="btn btn-sm btn-primary"> Go!</button> </span></div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th class="text-center">序号</th>
+                                    <th class="text-center">图片</th>
+                                    <th class="text-center">名称</th>
+                                    <th class="text-center">网址</th>
+                                    <th class="text-center">分类</th>
+                                    <th class="text-center">推荐</th>
+                                    <th class="text-center">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="text-center">1</td>
+                                    <td class="text-center"><img src="https://p0.ssl.qhimg.com/t019b49f526baa4d86b.jpg" alt=""></td>
+                                    <td class="text-center">京东商城</td>
+                                    <td><a href="http://www.jd.com/" target="_blank">http://www.jd.com/</a></td>
+                                    <td class="text-center">推荐网站/购物</td>
+                                    <td class="text-center"><a href="" class="tuijian"><i class="fa fa-trophy"></i></a></td>
+                                    <td class="text-center">
+                                        <a href="{:url('/admin/ruler/edit')}" class="btn btn-outline btn-white" type="button">修改</a>
+                                        <button class="btn btn-outline btn-white" type="button">删除</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">2</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center">爱奇艺</td>
+                                    <td><a href="http://www.iqiyi.com/" target="_blank">http://www.iqiyi.com/</a></td>
+                                    <td class="text-center">推荐网站/视频</td>
+                                    <td class="text-center"><a href="" class="tuijian"><i class="fa fa-level-up"></i></a></td>
+                                    <td class="text-center">
+                                        <a href="{:url('/admin/ruler/edit')}" class="btn btn-outline btn-white" type="button">修改</a>
+                                        <button class="btn btn-outline btn-white" type="button">删除</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">3</td>
+                                    <td class="text-center"></td>
+                                    <td class="text-center">正则表达式</td>
+                                    <td><a href="https://regexper.com/" target="_blank">https://regexper.com/</a></td>
+                                    <td class="text-center">学习网站/工具</td>
+                                    <td class="text-center"><a href="" class="tuijian"><i class="fa fa-level-up"></i></a></td>
+                                    <td class="text-center">
+                                        <a href="{:url('/admin/ruler/edit')}" class="btn btn-outline btn-white" type="button">修改</a>
+                                        <button class="btn btn-outline btn-white" type="button">删除</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">4</td>
+                                    <td class="text-center"><img src="//123p2.sogoucdn.com/imgu/2016/01/20160101012503_899.png" alt=""></td>
+                                    <td class="text-center">携程旅行</td>
+                                    <td><a href="http://www.ctrip.com/?utm_source=baidu&utm_medium=cpc&utm_campaign=baidu81&campaign=CHNbaidu81&adid=index&gclid=&isctrip=T" target="_blank">http://www.ctrip.com/</a></td>
+                                    <td class="text-center">推荐网站/旅游</td>
+                                    <td class="text-center"><a href="" class="tuijian"><i class="fa fa-level-up"></i></a></td>
+                                    <td class="text-center">
+                                        <a href="{:url('/admin/ruler/edit')}" class="btn btn-outline btn-white" type="button">修改</a>
+                                        <button class="btn btn-outline btn-white" type="button">删除</button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {include file="public/_bottom" /}
+</div>
+{include file="public/_footer" /}
+{js href="/static/admin/js/plugins/nestable/jquery.nestable.js"}
+</body>
+</html>
