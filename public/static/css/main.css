@@ -1,4 +1,4 @@
-body{margin: 0; padding: 0; font-family: "微软雅黑"; background: #feca97;}
+body{margin: 0; padding: 0; font-family: "微软雅黑"; background: #f8f9fc;}
 body, ul, ol, li, p, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, dl, dt, dd{margin: 0; padding: 0; border: 0; list-style: none; font-weight: normal; }
 .fl{float: left;}
 .fr{float: right;}
@@ -8,6 +8,9 @@ img{-ms-interpolation-mode:bicubic; max-width:100%;}/*防止windows缩放图片�
 .texta-c{text-align: center;}
 .mart-10{margin-top: 10px;}
 .home_icons{background-image: url("../images/home_icon.png"); display: inline-block;}
+a{color: inherit;}
+a:hover{text-decoration: none;}
+.container{min-width: 992px !important;}
 
 /*头部*/
 .head-bg{height: 290px;  background: url(../images/head-bg.jpg) no-repeat top center;}
