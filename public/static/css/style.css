@@ -125,7 +125,16 @@ ul.actions li:last-child {
 .index-header .logo{width: 30%;}
 .index-header .tianqi{padding: 5px;}
 .index-header .date{ padding: 13px;font-size: 12px;line-height: 22px; display: none;}
-.index-header .login{padding: 20px 0;min-width: 100px;text-align: right;}
+.index-header .login{padding: 20px 0;min-width: 98px;text-align: right;}
+.index-header .login .btn-link{
+    max-width: 98px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: keep-all;
+    color: #006ad4;
+    text-decoration: none;
+}
 .index-search {
     margin: 0 auto;
     max-width: 740px;
