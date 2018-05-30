@@ -124,6 +124,8 @@ ul.actions li:last-child {
 }
 .index-header .logo{width: 30%;}
 .index-header .tianqi{padding: 5px;}
+.index-header .date{ padding: 13px;font-size: 12px;line-height: 22px; display: none;}
+.index-header .login{padding: 20px 0;min-width: 100px;text-align: right;}
 .index-search {
     margin: 0 auto;
     max-width: 740px;
@@ -339,7 +341,9 @@ footer {
 }
 @media (min-width: 992px){
     .info-list li {width: 86px; }
+    /*.index-header .date{display: none;}*/
 }
 @media (min-width: 1200px){
-    .info-bd .info-bd-item h5 {max-width: 92px; }
+    .info-bd .info-bd-item h5 {max-width: 92px;}
+    .index-header .date{display: block;}
 }
