@@ -329,7 +329,10 @@ footer {
     font-size: 12px;
 }
 .footer-switch .link-group a:hover{text-decoration: none; color: #0c6ad4;}
-.footer-switch .my-tel{}
+.footer-switch .my-tel{
+    font-family: constantia;
+    font-size: 20px;
+}
 .footer-miscs{margin-top: 25px;}
 .footer-miscs .copy-right{
     font-size: 12px;
