@@ -12,7 +12,7 @@ namespace app\index\controller;
 use think\Controller;
 use think\Db;
 
-class article extends Controller
+class Collect extends Controller
 {
     public function index(){
         $data= Db::name('article')->select();

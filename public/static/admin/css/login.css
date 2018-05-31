@@ -1,0 +1,17 @@
+body{background: url("../img/bg.jpg") no-repeat center center #0e9aef;}
+#wrapper {
+    height: 100%;
+    background: rgba(48, 151, 253, 0.5);
+}
+#wrapper2{
+    height: 100%;
+    background: #fff;
+}
+.middle-box h1 {
+     font-size: 30px;
+}
+.middle-box {
+    padding-top: 20%;
+}
+
+/*用户登录*/
