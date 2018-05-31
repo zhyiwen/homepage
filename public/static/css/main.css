@@ -10,7 +10,7 @@ img{-ms-interpolation-mode:bicubic; max-width:100%;}/*防止windows缩放图片�
 .home_icons{background-image: url("../images/home_icon.png"); display: inline-block;}
 a{color: inherit;}
 a:hover{text-decoration: none;}
-.container{min-width: 992px !important;}
+.container{min-width: 1200px !important;}
 .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
     float: left;
 }
