@@ -37,18 +37,6 @@
         </div>
     </div>
 </footer>
-{js href="/static/js/jquery.min.js,/static/js/bootstrap.min.js" /}
-<script type="text/javascript">
-    //initiating jQuery
-    jQuery(function($) {
-        //绑定输入框，这里只能 是ID
-        $("#baidusearch").keydown(function(event){
-          event=document.all?window.event:event;
-          if((event.keyCode || event.which)==13){
-           
-          }
-        });
-    });
-</script>
+{js href="/static/js/jquery.min.js,/static/js/bootstrap.min.js,/static/js/index.js" /}
 </body>
 </html>

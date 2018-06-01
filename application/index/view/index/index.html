@@ -1,317 +1,327 @@
 {include file="public/_header" /}
-<div class="container">
-    <div class="index-main">
+<div class="index-main">
+    <div class="container">
         <div class="index-header clearfix">
             <div class="pull-left logo"><img src="/static/images/logo.png" alt=""></div>
             <div class="pull-left tianqi">
                 <iframe allowtransparency="true" frameborder="0" width="565" height="64" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=1&v=2&d=3&bd=0&k=&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=71679&w=565&h=64&align=left"></iframe>
             </div>
             <div class="pull-right login">
-                <!--<button class="btn btn-default btn-sm"><i class="fa fa-user-o"></i> 登录</button>-->
-                <button class="btn btn-link btn-sm"><i class="fa fa-user-o"></i> 抓耗子的猫</button>
+                <button class="btn btn-default btn-sm"><i class="fa fa-user-o"></i> 登录</button>
+                <!--<button class="btn btn-link btn-sm"><i class="fa fa-user-o"></i> 抓耗子的猫</button>-->
             </div>
-            <div class="pull-right date">
-                <p>5月30日 星期三</p>
-                <p>农历四月十六</p>
-            </div>
-
+            <div class="pull-right date" id="currentDate"></div>
         </div>
-        <div class="index-info-search">
-            <div class="index-search">
-                <form action="http://www.baidu.com/baidu" target="_blank">
-                    <div class="input-group">
-                        <div class="input-group-btn">
-                            <button type="button" class="btn btn-link
+    </div>
+    <div class="link-cont">
+        <div class="container">
+            <div class="index-info-search">
+                <div class="index-search">
+                    <form action="http://www.baidu.com/baidu" target="_blank">
+                        <div class="input-group">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-link
                         dropdown-toggle search-select" data-toggle="dropdown">百度搜索
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="https://www.baidu.com/" target="_blank"><span class="home_icons icon-baidu"></span></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.so.com/" target="_blank"><span class="home_icons icon-360"></span></a>
-                                </li>
-                                <li>
-                                    <a href="http://cn.bing.com/" target="_blank"><span class="home_icons icon-bing"></span></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.google.com/" target="_blank"><span class="home_icons icon-google"></span></a>
-                                </li>
-                                <li>
-                                    <a href="http://www.youdao.com/" target="_blank"><span class="home_icons icon-youdao"></span></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.sogou.com/" target="_blank"><span class="home_icons icon-sougou"></span></a>
-                                </li>
-                            </ul>
-                        </div><!-- /btn-group -->
-                        <input name=tn type=hidden value=baidu>
-                        <input type="text" class="form-control" name=word size=30 id="baidusearch">
-                        <span class="input-group-btn">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="https://www.baidu.com/" target="_blank"><span class="home_icons icon-baidu"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.so.com/" target="_blank"><span class="home_icons icon-360"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="http://cn.bing.com/" target="_blank"><span class="home_icons icon-bing"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.google.com/" target="_blank"><span class="home_icons icon-google"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.youdao.com/" target="_blank"><span class="home_icons icon-youdao"></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.sogou.com/" target="_blank"><span class="home_icons icon-sougou"></span></a>
+                                    </li>
+                                </ul>
+                            </div><!-- /btn-group -->
+                            <input name=tn type=hidden value=baidu>
+                            <input type="text" class="form-control" name=word size=30 id="baidusearch">
+                            <span class="input-group-btn">
                             <button class="btn btn-info" type="submit">搜索</button>
                         </span>
-                    </div>
-                </form>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="row link-main">
-            <div class="col-md-4">
-                <div class="index-info cankao">
-                    <!--<div class="info-hd">参考网站</div>-->
-                    <div class="mod-dashTit">
-                        <span class="tit"><i class="decorate"></i>参考网站</span>
-                        <span class="line"></span>
+        <div class="container">
+            <div class="row link-main">
+                <div class="col-md-4">
+                    <div class="index-info cankao">
+                        <!--<div class="info-hd">参考网站</div>-->
+                        <div class="mod-dashTit">
+                            <span class="tit"><i class="decorate"></i>参考网站</span>
+                            <span class="line"></span>
+                        </div>
+                        <div class="info-bd">
+                            <ul class="info1-list clearfix">
+                                <li class="col-md-4"><a href="https://yt.lianjia.com/" target="_blank" class="btn-link info1-link"><img src="https://img.alicdn.com/imgextra/i2/2590951958/TB2wsidmcyYBuNkSnfoXXcWgVXa_!!2590951958.png" alt="">链家</a></li>
+                                <li class="col-md-4"><a href="https://jinan.anjuke.com/" target="_blank" class="btn-link info1-link"><img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=880572432,1747371633&fm=58" alt="">安居客</a></li>
+                                <li class="col-md-4"><a href="http://yt.fang.com/" target="_blank" class="btn-link info1-link"><img src="https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/img/soufangicon20150925.png" alt="">房天下</a></li>
+                                <li class="col-md-4"><a href="http://yantai.ganji.com/fang/" target="_blank" class="btn-link info1-link"><img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2384808249,2412200383&fm=58" alt="">赶集房产</a></li>
+                                <li class="col-md-4"><a href="http://yt.58.com/house.shtml?PGTID=0d100000-000e-4e67-2ea4-ef866043cdca&ClickID=2" target="_blank" class="btn-link info1-link"><img src="https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2016-11-11/331a6bbc2154a554b62b5bfce2d5cbd6.png" alt="">58房产</a></li>
+                                <li class="col-md-4"><a href="https://yt.focus.cn/loupan/" target="_blank" class="btn-link info1-link"><img src="https://img.alicdn.com/imgextra/i3/2590951958/TB2g118uAKWBuNjy1zjXXcOypXa_!!2590951958.png" alt="">搜狐焦点</a></li>
+                                <li class="col-md-4"><a href="http://yt.leju.com/" target="_blank" class="btn-link info1-link">新浪乐居</a></li>
+                                <li class="col-md-4"><a href="https://bj.5i5j.com/" target="_blank" class="btn-link info1-link">我爱我家</a></li>
+                                <li class="col-md-4"><a href="http://yt.goufang.com/" target="_blank" class="btn-link info1-link">购房网</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="info-bd">
-                        <ul class="info1-list clearfix">
-                            <li class="col-md-4"><a href="https://yt.lianjia.com/" target="_blank" class="btn-link info1-link"><img src="https://img.alicdn.com/imgextra/i2/2590951958/TB2wsidmcyYBuNkSnfoXXcWgVXa_!!2590951958.png" alt="">链家</a></li>
-                            <li class="col-md-4"><a href="https://jinan.anjuke.com/" target="_blank" class="btn-link info1-link"><img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=880572432,1747371633&fm=58" alt="">安居客</a></li>
-                            <li class="col-md-4"><a href="http://yt.fang.com/" target="_blank" class="btn-link info1-link"><img src="https://img.alicdn.com/imgextra/i3/2590951958/TB24UjFg9MmBKNjSZTEXXasKpXa_!!2590951958.jpg" alt="">房天下</a></li>
-                            <li class="col-md-4"><a href="http://yantai.ganji.com/fang/" target="_blank" class="btn-link info1-link"><img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2384808249,2412200383&fm=58" alt="">赶集房产</a></li>
-                            <li class="col-md-4"><a href="http://yt.58.com/house.shtml?PGTID=0d100000-000e-4e67-2ea4-ef866043cdca&ClickID=2" target="_blank" class="btn-link info1-link"><img src="https://img.alicdn.com/imgextra/i3/2590951958/TB2.D8yhnmWBKNjSZFBXXXxUFXa_!!2590951958.png" alt="">58房产</a></li>
-                            <li class="col-md-4"><a href="https://yt.focus.cn/loupan/" target="_blank" class="btn-link info1-link"><img src="https://img.alicdn.com/imgextra/i3/2590951958/TB2g118uAKWBuNjy1zjXXcOypXa_!!2590951958.png" alt="">搜狐焦点</a></li>
-                            <li class="col-md-4"><a href="http://yt.leju.com/" target="_blank" class="btn-link info1-link">新浪乐居</a></li>
-                            <li class="col-md-4"><a href="https://bj.5i5j.com/" target="_blank" class="btn-link info1-link">我爱我家</a></li>
-                            <li class="col-md-4"><a href="http://yt.goufang.com/" target="_blank" class="btn-link info1-link">购房网</a></li>
+                    <div class="index-info">
+                        <!--<div class="info-hd">我的收藏</div>-->
+                        <div class="mod-dashTit">
+                            <span class="tit"><i class="decorate"></i>我的收藏</span>
+                            <span class="line"></span>
+                        </div>
+                        <div class="info-bd">
+                            <ul class="media-list link-cont">
+                                <li class="media">
+                                    <a href="https://www.cnblogs.com/LiuJL/p/5417685.html" target="_blank">
+                                        <div class="heart-body">
+                                            <h4 class="heart-heading">js(jQuery)获取时间的方法及常用时间类</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media">
+                                    <a href="http://www.ui.cn/detail/221439" target="_blank">
+                                        <div class="heart-body">
+                                            <h4 class="heart-heading">APP界面设计规范编写</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="media">
+                                    <a href="https://blog.csdn.net/u014688419/article/details/52424331" target="_blank">
+                                        <div class="heart-body">
+                                            <h4 class="heart-heading">bootstrap 上传图片插件 file-input 的简单使用</h4>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info-fd"><a href="{:url('/index/index/heart')}" class="btn btn-sm btn-link">查看更多 >></a></div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="index-info clearfix tuijian">
+                        <ul class="info1-list">
+                            <li class="col-md-2"><a href="http://www.baidu.com" target="_blank" class="btn-link info1-link">百度</a></li>
+                            <li class="col-md-2"><a href="https://baike.baidu.com/" target="_blank" class="btn-link info1-link">百度百科</a></li>
+                            <li class="col-md-2"><a href="http://fanyi.baidu.com/" target="_blank" class="btn-link info1-link"><img src="https://img.alicdn.com/imgextra/i1/2590951958/TB2HZsKuqmWBuNjy1XaXXXCbXXa_!!2590951958.png" alt="">百度翻译</a></li>
+                            <li class="col-md-2"><a href="http://map.baidu.com/" target="_blank" class="btn-link info1-link">百度地图</a></li>
+                            <li class="col-md-2"><a href="https://pan.baidu.com/" target="_blank" class="btn-link info1-link"><img src="https://img.alicdn.com/imgextra/i2/2590951958/TB2S7p6mfiSBuNkSnhJXXbDcpXa_!!2590951958.jpg" alt="">百度云盘</a></li>
+                            <li class="col-md-2"><a href="http://www.12306.cn/mormhweb/" target="_blank" class="btn-link info1-link">12306</a></li>
+                            <li class="col-md-2"><a href="https://www.aliyun.com/" target="_blank" class="btn-link info1-link"><img src="http://bj.bcebos.com/fcnp-ip/1013/pic/6021b1b62bdf98b0e9554878ea85a719.png" alt="">阿里云</a></li>
+                            <li class="col-md-2"><a href="http://weibo.com/" target="_blank" class="btn-link info1-link">新浪微博</a></li>
+                            <li class="col-md-2"><a href="http://blog.sina.com.cn/" target="_blank" class="btn-link info1-link">新浪博客</a></li>
+                            <li class="col-md-2"><a href="http://www.tmall.com/" target="_blank" class="btn-link info1-link"><img src="//123p3.sogoucdn.com/imgu/2014/08/20140820172423_671.png">天猫</a></li>
+                            <li class="col-md-2"><a href="http://www.taobao.com/" target="_blank" class="btn-link info1-link"><img src="//123p3.sogoucdn.com/imgu/2017/12/20171212232826_950.png" alt="">淘宝网</a></li>
+                            <li class="col-md-2"><a href="https://ju.taobao.com/" target="_blank" class="btn-link info1-link"><img src="//123p1.sogoucdn.com/imgu/2018/05/20180518141403_194.png" alt="">聚划算</a></li>
+                            <li class="col-md-2"><a href="http://www.jd.com" target="_blank" class="btn-link info1-link"><img src="https://p0.ssl.qhimg.com/t019b49f526baa4d86b.jpg">京东商城</a></li>
+                            <li class="col-md-2"><a href="http://pub.alimama.com/promo/search/index.htm?toPage=1&queryType=2" target="_blank" class="btn-link info1-link">淘宝联盟</a></li>
+                            <li class="col-md-2"><a href="http://yt.58.com/" target="_blank" class="btn-link info1-link"><img
+                                    src="https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2016-11-11/331a6bbc2154a554b62b5bfce2d5cbd6.png" alt="">58同城</a></li>
+                            <li class="col-md-2"><a href="http://www.ganji.com/" target="_blank" class="btn-link info1-link">赶集网</a></li>
+                            <li class="col-md-2"><a href="http://ts.zhaopin.com/jump/index.html?utm_source=other&utm_medium=cnt&utm_term=&utm_campaign=121121229&utm_provider=zp&sid=121121229&site=dubamz65" target="_blank" class="btn-link info1-link">智联招聘</a></li>
+                            <li class="col-md-2"><a href="http://yt.fang.com/" target="_blank" class="btn-link info1-link">搜房网</a></li>
+                            <li class="col-md-2"><a href="http://www.ctrip.com/?utm_source=baidu&utm_medium=cpc&utm_campaign=baidu81&campaign=CHNbaidu81&adid=index&gclid=&isctrip=T" target="_blank" class="btn-link info1-link"><img src="//123p2.sogoucdn.com/imgu/2016/01/20160101012503_899.png">携程旅行</a></li>
+                            <li class="col-md-2"><a href="https://qzone.qq.com/" target="_blank" class="btn-link info1-link"><img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2976047483,2307003534&fm=58" alt="">QQ空间</a></li>
+                            <li class="col-md-2"><a href="http://www.dataoke.com/" target="_blank" class="btn-link info1-link">大淘客</a></li>
+                            <li class="col-md-2"><a href="http://www.yishoudan.com/" target="_blank" class="btn-link info1-link">一手单</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="index-info">
-                    <!--<div class="info-hd">我的收藏</div>-->
-                    <div class="mod-dashTit">
-                        <span class="tit"><i class="decorate"></i>我的收藏</span>
-                        <span class="line"></span>
-                    </div>
-                    <div class="info-bd">
-                        <ul class="media-list link-cont">
-                            <li class="media">
-                                <a href="https://www.cnblogs.com/LiuJL/p/5417685.html" target="_blank">
-                                    <div class="heart-body">
-                                        <h4 class="heart-heading">js(jQuery)获取时间的方法及常用时间类</h4>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="media">
-                                <a href="http://www.ui.cn/detail/221439" target="_blank">
-                                    <div class="heart-body">
-                                        <h4 class="heart-heading">APP界面设计规范编写</h4>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="info-fd"><a href="{:url('/index/index/heart')}" class="btn btn-sm btn-link">查看更多 >></a></div>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="index-info clearfix tuijian">
-                    <ul class="info1-list">
-                        <li class="col-md-2"><a href="http://www.baidu.com" target="_blank" class="btn-link info1-link">百度</a></li>
-                        <li class="col-md-2"><a href="https://baike.baidu.com/" target="_blank" class="btn-link info1-link">百度百科</a></li>
-                        <li class="col-md-2"><a href="http://fanyi.baidu.com/" target="_blank" class="btn-link info1-link"><img src="https://img.alicdn.com/imgextra/i1/2590951958/TB2HZsKuqmWBuNjy1XaXXXCbXXa_!!2590951958.png" alt="">百度翻译</a></li>
-                        <li class="col-md-2"><a href="http://map.baidu.com/" target="_blank" class="btn-link info1-link">百度地图</a></li>
-                        <li class="col-md-2"><a href="https://pan.baidu.com/" target="_blank" class="btn-link info1-link"><img src="https://img.alicdn.com/imgextra/i2/2590951958/TB2S7p6mfiSBuNkSnhJXXbDcpXa_!!2590951958.jpg" alt="">百度云盘</a></li>
-                        <li class="col-md-2"><a href="http://www.12306.cn/mormhweb/" target="_blank" class="btn-link info1-link">12306</a></li>
-                        <li class="col-md-2"><a href="https://www.aliyun.com/" target="_blank" class="btn-link info1-link"><img src="http://bj.bcebos.com/fcnp-ip/1013/pic/6021b1b62bdf98b0e9554878ea85a719.png" alt="">阿里云</a></li>
-                        <li class="col-md-2"><a href="http://weibo.com/" target="_blank" class="btn-link info1-link">新浪微博</a></li>
-                        <li class="col-md-2"><a href="http://blog.sina.com.cn/" target="_blank" class="btn-link info1-link">新浪博客</a></li>
-                        <li class="col-md-2"><a href="http://www.tmall.com/" target="_blank" class="btn-link info1-link"><img src="//123p3.sogoucdn.com/imgu/2014/08/20140820172423_671.png">天猫</a></li>
-                        <li class="col-md-2"><a href="http://www.taobao.com/" target="_blank" class="btn-link info1-link"><img src="//123p3.sogoucdn.com/imgu/2017/12/20171212232826_950.png" alt="">淘宝网</a></li>
-                        <li class="col-md-2"><a href="https://ju.taobao.com/" target="_blank" class="btn-link info1-link"><img src="//123p1.sogoucdn.com/imgu/2018/05/20180518141403_194.png" alt="">聚划算</a></li>
-                        <li class="col-md-2"><a href="http://www.jd.com" target="_blank" class="btn-link info1-link"><img src="https://p0.ssl.qhimg.com/t019b49f526baa4d86b.jpg">京东商城</a></li>
-                        <li class="col-md-2"><a href="http://pub.alimama.com/promo/search/index.htm?toPage=1&queryType=2" target="_blank" class="btn-link info1-link">淘宝联盟</a></li>
-                        <li class="col-md-2"><a href="http://yt.58.com/" target="_blank" class="btn-link info1-link">58同城</a></li>
-                        <li class="col-md-2"><a href="http://www.ganji.com/" target="_blank" class="btn-link info1-link">赶集网</a></li>
-                        <li class="col-md-2"><a href="http://ts.zhaopin.com/jump/index.html?utm_source=other&utm_medium=cnt&utm_term=&utm_campaign=121121229&utm_provider=zp&sid=121121229&site=dubamz65" target="_blank" class="btn-link info1-link">智联招聘</a></li>
-                        <li class="col-md-2"><a href="http://yt.fang.com/" target="_blank" class="btn-link info1-link">搜房网</a></li>
-                        <li class="col-md-2"><a href="http://www.ctrip.com/?utm_source=baidu&utm_medium=cpc&utm_campaign=baidu81&campaign=CHNbaidu81&adid=index&gclid=&isctrip=T" target="_blank" class="btn-link info1-link"><img src="//123p2.sogoucdn.com/imgu/2016/01/20160101012503_899.png">携程旅行</a></li>
-                        <li class="col-md-2"><a href="https://qzone.qq.com/" target="_blank" class="btn-link info1-link"><img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2976047483,2307003534&fm=58" alt="">QQ空间</a></li>
-                        <li class="col-md-2"><a href="http://www.dataoke.com/" target="_blank" class="btn-link info1-link">大淘客</a></li>
-                        <li class="col-md-2"><a href="http://www.yishoudan.com/" target="_blank" class="btn-link info1-link">一手单</a></li>
-                    </ul>
-                </div>
-                <div class="index-info">
-                    <!--<div class="info-hd">推荐网站</div>-->
-                    <div class="mod-dashTit">
-                        <span class="tit"><i class="decorate"></i>推荐网站</span>
-                        <span class="line"></span>
-                    </div>
-                    <div class="info-bd">
-                        <div class="info-bd-item clearfix">
-                            <h5>视频</h5>
-                            <div class="info-ul">
-                                <ul class="info-list clearfix">
-                                    <li><a href="http://www.360kan.com/" target="_blank" class="btn-link info-link">360影视</a></li>
-                                    <li><a href="http://www.iqiyi.com/" target="_blank" class="btn-link info-link">爱奇艺</a></li>
-                                    <li><a href="http://www.youku.com/" target="_blank" class="btn-link info-link">优酷网</a></li>
-                                    <li><a href="http://www.le.com/?server" target="_blank" class="btn-link info-link">乐视网</a></li>
-                                    <li><a href="http://tv.sohu.com/" target="_blank" class="btn-link info-link">搜狐视频</a></li>
-                                    <li><a href="https://v.qq.com/" target="_blank" class="btn-link info-link">腾讯视频</a></li>
-                                    <li><a href="http://www.mgtv.com/?f=bdpz" target="_blank" class="btn-link info-link">芒果TV</a></li>
-                                </ul>
-                            </div>
+                    <div class="index-info">
+                        <!--<div class="info-hd">推荐网站</div>-->
+                        <div class="mod-dashTit">
+                            <span class="tit"><i class="decorate"></i>推荐网站</span>
+                            <span class="line"></span>
                         </div>
-                        <div class="info-bd-item clearfix">
-                            <h5>邮箱</h5>
-                            <div class="info-ul">
-                                <ul class="info-list clearfix">
-                                    <li><a href="http://email.163.com/" target="_blank" class="btn-link info-link">163邮箱</a></li>
-                                    <li><a href="http://www.126.com/" target="_blank" class="btn-link info-link">126邮箱</a></li>
-                                    <li><a href="https://mail.qq.com/" target="_blank" class="btn-link info-link">QQ邮箱</a></li>
-                                    <li><a href="http://mail.sina.com.cn/" target="_blank" class="btn-link info-link">新浪邮箱</a></li>
-                                    <li><a href="https://mail.aliyun.com/" target="_blank" class="btn-link info-link">阿里云邮箱</a></li>
-                                    <li><a href="https://mail.sohu.com/" target="_blank" class="btn-link info-link">搜狐邮箱</a></li>
-                                </ul>
+                        <div class="info-bd">
+                            <div class="info-bd-item clearfix">
+                                <h5>视频</h5>
+                                <div class="info-ul">
+                                    <ul class="info-list clearfix">
+                                        <li><a href="http://www.360kan.com/" target="_blank" class="btn-link info-link">360影视</a></li>
+                                        <li><a href="http://www.iqiyi.com/" target="_blank" class="btn-link info-link">爱奇艺</a></li>
+                                        <li><a href="http://www.youku.com/" target="_blank" class="btn-link info-link">优酷网</a></li>
+                                        <li><a href="http://www.le.com/?server" target="_blank" class="btn-link info-link">乐视网</a></li>
+                                        <li><a href="http://tv.sohu.com/" target="_blank" class="btn-link info-link">搜狐视频</a></li>
+                                        <li><a href="https://v.qq.com/" target="_blank" class="btn-link info-link">腾讯视频</a></li>
+                                        <li><a href="http://www.mgtv.com/?f=bdpz" target="_blank" class="btn-link info-link">芒果TV</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="info-bd-item clearfix">
-                            <h5>购物</h5>
-                            <div class="info-ul">
-                                <ul class="info-list clearfix">
-                                    <li><a href="http://www.jd.com" target="_blank" class="btn-link info-link">京东商城</a></li>
-                                    <li><a href="https://www.suning.com/" target="_blank" class="btn-link info-link">苏宁易购</a></li>
-                                    <li><a href="http://bj.jumei.com/" target="_blank" class="btn-link info-link">聚美优品</a></li>
-                                    <li><a href="http://www.tmall.com/" target="_blank" class="btn-link info-link">天猫</a></li>
-                                    <li><a href="https://www.gome.com.cn/" target="_blank" class="btn-link info-link">国美</a></li>
-                                    <li><a href="https://ju.taobao.com/" target="_blank" class="btn-link info-link">聚划算</a></li>
-                                    <li><a href="https://qiang.taobao.com/" target="_blank" class="btn-link info-link">淘抢购</a></li>
-                                    <li><a href="https://www.vip.com/" target="_blank" class="btn-link info-link">唯品会</a></li>
-                                    <li><a href="http://www.taobao.com/" target="_blank" class="btn-link info-link">淘宝网</a></li>
-                                    <li><a href="http://www.yhd.com/" target="_blank" class="btn-link info-link">1号店</a></li>
-                                    <li><a href="https://www.amazon.cn/" target="_blank" class="btn-link info-link">亚马逊</a></li>
-                                </ul>
+                            <div class="info-bd-item clearfix">
+                                <h5>邮箱</h5>
+                                <div class="info-ul">
+                                    <ul class="info-list clearfix">
+                                        <li><a href="http://email.163.com/" target="_blank" class="btn-link info-link">163邮箱</a></li>
+                                        <li><a href="http://www.126.com/" target="_blank" class="btn-link info-link">126邮箱</a></li>
+                                        <li><a href="https://mail.qq.com/" target="_blank" class="btn-link info-link">QQ邮箱</a></li>
+                                        <li><a href="http://mail.sina.com.cn/" target="_blank" class="btn-link info-link">新浪邮箱</a></li>
+                                        <li><a href="https://mail.aliyun.com/" target="_blank" class="btn-link info-link">阿里云邮箱</a></li>
+                                        <li><a href="https://mail.sohu.com/" target="_blank" class="btn-link info-link">搜狐邮箱</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="info-bd-item clearfix">
+                                <h5>购物</h5>
+                                <div class="info-ul">
+                                    <ul class="info-list clearfix">
+                                        <li><a href="http://www.jd.com" target="_blank" class="btn-link info-link">京东商城</a></li>
+                                        <li><a href="https://www.suning.com/" target="_blank" class="btn-link info-link">苏宁易购</a></li>
+                                        <li><a href="http://bj.jumei.com/" target="_blank" class="btn-link info-link">聚美优品</a></li>
+                                        <li><a href="http://www.tmall.com/" target="_blank" class="btn-link info-link">天猫</a></li>
+                                        <li><a href="https://www.gome.com.cn/" target="_blank" class="btn-link info-link">国美</a></li>
+                                        <li><a href="https://ju.taobao.com/" target="_blank" class="btn-link info-link">聚划算</a></li>
+                                        <li><a href="https://qiang.taobao.com/" target="_blank" class="btn-link info-link">淘抢购</a></li>
+                                        <li><a href="https://www.vip.com/" target="_blank" class="btn-link info-link">唯品会</a></li>
+                                        <li><a href="http://www.taobao.com/" target="_blank" class="btn-link info-link">淘宝网</a></li>
+                                        <li><a href="http://www.yhd.com/" target="_blank" class="btn-link info-link">1号店</a></li>
+                                        <li><a href="https://www.amazon.cn/" target="_blank" class="btn-link info-link">亚马逊</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="index-info">
-                    <!--<div class="info-hd">学习网站</div>-->
-                    <div class="mod-dashTit">
-                        <span class="tit"><i class="decorate"></i>学习网站</span>
-                        <span class="line"></span>
+                    <div class="index-info">
+                        <!--<div class="info-hd">学习网站</div>-->
+                        <div class="mod-dashTit">
+                            <span class="tit"><i class="decorate"></i>学习网站</span>
+                            <span class="line"></span>
+                        </div>
+                        <div class="info-bd">
+                            <div class="info-bd-item clearfix">
+                                <h5>示例</h5>
+                                <div class="info-ul">
+                                    <ul class="info-list clearfix">
+                                        <li><a href="http://www.17sucai.com/" target="_blank" class="btn-link info-link">17素材网</a></li>
+                                        <li><a href="http://www.htmleaf.com/" target="_blank" class="btn-link info-link">jQuery之家</a></li>
+                                        <li><a href="https://github.com/" target="_blank" class="btn-link info-link">GitHub</a></li>
+                                        <li><a href="http://fontawesome.dashgame.com/" target="_blank" class="btn-link info-link">FontAwesome</a></li>
+                                        <li><a href="http://codepen.io/#" target="_blank" class="btn-link info-link">codepen</a></li>
+                                        <li><a href="http://keenthemes.com/preview/metronic/" target="_blank" class="btn-link info-link">Metronic</a></li>
+                                        <li><a href="https://icomoon.io/" target="_blank" class="btn-link info-link">icomoon</a></li>
+                                        <li><a href="http://www.bootcss.com/p/websafecolors/" target="_blank" class="btn-link info-link">web安全色</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="info-bd-item clearfix">
+                                <h5>插件</h5>
+                                <div class="info-ul">
+                                    <ul class="info-list clearfix">
+                                        <li><a href="http://www.bootcss.com/" target="_blank" class="btn-link info-link">bootstrap</a></li>
+                                        <li><a href="http://amazeui.org/" target="_blank" class="btn-link info-link">Amaze UI</a></li>
+                                        <li><a href="http://www.layui.com/" target="_blank" class="btn-link info-link">layui</a></li>
+                                        <li><a href="http://layer.layui.com/" target="_blank" class="btn-link info-link">layer</a></li>
+                                        <li><a href="http://www.swiper.com.cn/" target="_blank" class="btn-link info-link">Swiper</a></li>
+                                        <li><a href="http://www.jq22.com/yanshi819" target="_blank" class="btn-link info-link">animate</a></li>
+                                        <li><a href="http://www.dowebok.com/131.html" target="_blank" class="btn-link info-link">Wow</a></li>
+                                        <li><a href="http://frozenui.github.io/" target="_blank" class="btn-link info-link">FrozeUI</a></li>
+                                        <li><a href="http://jqweui.com/" target="_blank" class="btn-link info-link">WeUI</a></li>
+                                        <li><a href="http://www.auicss.com/doc/v/2/doc_id/1" target="_blank" class="btn-link info-link">AUI</a></li>
+                                        <li><a href="http://dev.dcloud.net.cn/mui/ui/" target="_blank" class="btn-link info-link">MUI</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="info-bd-item clearfix">
+                                <h5>工具</h5>
+                                <div class="info-ul">
+                                    <ul class="info-list clearfix">
+                                        <li><a href="http://tu.taobao.com/" target="_blank" class="btn-link info-link">图片空间</a></li>
+                                        <li><a href="https://wanwang.aliyun.com/domain/searchresult" target="_blank" class="btn-link info-link">域名查询</a></li>
+                                        <li><a href="http://cdn.code.baidu.com/" target="_blank" class="btn-link info-link">百度静态资源公共库</a></li>
+                                        <li><a href="http://www.qt86.com/" target="_blank" class="btn-link info-link">艺术字在线生成</a></li>
+                                        <li><a href="http://www.bestcssbuttongenerator.com/" target="_blank" class="btn-link info-link">按钮在线生成</a></li>
+                                        <li><a href="https://regexper.com/" target="_blank" class="btn-link info-link">正则表达式</a></li>
+                                        <li><a href="http://www.faviconico.org/favicon" target="_blank" class="btn-link info-link">ico转换</a></li>
+                                        <li><a href="http://tool.lu/css/" target="_blank" class="btn-link info-link">代码压缩1</a></li>
+                                        <li><a href="http://tool.oschina.net/jscompress/" target="_blank" class="btn-link info-link">代码压缩2</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="info-bd-item clearfix">
+                                <h5>UI设计</h5>
+                                <div class="info-ul">
+                                    <ul class="info-list clearfix">
+                                        <li><a href="http://www.58pic.com/" target="_blank" class="btn-link info-link">千图网</a></li>
+                                        <li><a href="http://huaban.com/" target="_blank" class="btn-link info-link">花瓣网</a></li>
+                                        <li><a href="http://ibaotu.com/" target="_blank" class="btn-link info-link">包图网</a></li>
+                                        <li><a href="http://www.easyicon.net/" target="_blank" class="btn-link info-link">easyicon</a></li>
+                                        <li><a href="http://www.iconfont.cn/" target="_blank" class="btn-link info-link">iconfont</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="info-bd-item clearfix">
+                                <h5>视频</h5>
+                                <div class="info-ul">
+                                    <ul class="info-list clearfix">
+                                        <li><a href="http://www.imooc.com/" target="_blank" class="btn-link info-link">慕课网</a></li>
+                                        <li><a href="http://www.jikexueyuan.com/" target="_blank" class="btn-link info-link">极客学院</a></li>
+                                        <li><a href="http://study.163.com/" target="_blank" class="btn-link info-link">网易云课堂</a></li>
+                                        <li><a href="http://www.68ps.com/" target="_blank" class="btn-link info-link">PS联盟</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="info-bd">
-                        <div class="info-bd-item clearfix">
-                            <h5>示例</h5>
-                            <div class="info-ul">
-                                <ul class="info-list clearfix">
-                                    <li><a href="http://www.17sucai.com/" target="_blank" class="btn-link info-link">17素材网</a></li>
-                                    <li><a href="http://www.htmleaf.com/" target="_blank" class="btn-link info-link">jQuery之家</a></li>
-                                    <li><a href="https://github.com/" target="_blank" class="btn-link info-link">GitHub</a></li>
-                                    <li><a href="http://fontawesome.dashgame.com/" target="_blank" class="btn-link info-link">FontAwesome</a></li>
-                                    <li><a href="http://codepen.io/#" target="_blank" class="btn-link info-link">codepen</a></li>
-                                    <li><a href="http://keenthemes.com/preview/metronic/" target="_blank" class="btn-link info-link">Metronic</a></li>
-                                    <li><a href="https://icomoon.io/" target="_blank" class="btn-link info-link">icomoon</a></li>
-                                    <li><a href="http://www.bootcss.com/p/websafecolors/" target="_blank" class="btn-link info-link">web安全色</a></li>
-                                </ul>
-                            </div>
+                    <div class="index-info">
+                        <!--<div class="info-hd">学习文档</div>-->
+                        <div class="mod-dashTit">
+                            <span class="tit"><i class="decorate"></i>学习文档</span>
+                            <span class="line"></span>
                         </div>
-                        <div class="info-bd-item clearfix">
-                            <h5>插件</h5>
-                            <div class="info-ul">
-                                <ul class="info-list clearfix">
-                                    <li><a href="http://www.bootcss.com/" target="_blank" class="btn-link info-link">bootstrap</a></li>
-                                    <li><a href="http://amazeui.org/" target="_blank" class="btn-link info-link">Amaze UI</a></li>
-                                    <li><a href="http://www.layui.com/" target="_blank" class="btn-link info-link">layui</a></li>
-                                    <li><a href="http://layer.layui.com/" target="_blank" class="btn-link info-link">layer</a></li>
-                                    <li><a href="http://www.swiper.com.cn/" target="_blank" class="btn-link info-link">Swiper</a></li>
-                                    <li><a href="http://www.jq22.com/yanshi819" target="_blank" class="btn-link info-link">animate</a></li>
-                                    <li><a href="http://www.dowebok.com/131.html" target="_blank" class="btn-link info-link">Wow</a></li>
-                                    <li><a href="http://frozenui.github.io/" target="_blank" class="btn-link info-link">FrozeUI</a></li>
-                                    <li><a href="http://jqweui.com/" target="_blank" class="btn-link info-link">WeUI</a></li>
-                                    <li><a href="http://www.auicss.com/doc/v/2/doc_id/1" target="_blank" class="btn-link info-link">AUI</a></li>
-                                    <li><a href="http://dev.dcloud.net.cn/mui/ui/" target="_blank" class="btn-link info-link">MUI</a></li>
-                                </ul>
+                        <div class="info-bd">
+                            <div class="info-bd-item clearfix">
+                                <h5>汇总网站</h5>
+                                <div class="info-ul">
+                                    <ul class="info-list clearfix">
+                                        <li><a href="http://www.runoob.com/" target="_blank" class="btn-link info-link">runoob</a></li>
+                                        <li><a href="http://www.liaoxuefeng.com/" target="_blank" class="btn-link info-link">廖雪峰</a></li>
+                                        <li><a href="http://www.w3school.com.cn/" target="_blank" class="btn-link info-link">W3school</a></li>
+                                        <li><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/?t=20161102" target="_blank" class="btn-link info-link">微信小程序</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="info-bd-item clearfix">
-                            <h5>工具</h5>
-                            <div class="info-ul">
-                                <ul class="info-list clearfix">
-                                    <li><a href="http://tu.taobao.com/" target="_blank" class="btn-link info-link">图片空间</a></li>
-                                    <li><a href="https://wanwang.aliyun.com/domain/searchresult" target="_blank" class="btn-link info-link">域名查询</a></li>
-                                    <li><a href="http://cdn.code.baidu.com/" target="_blank" class="btn-link info-link">百度静态资源公共库</a></li>
-                                    <li><a href="http://www.qt86.com/" target="_blank" class="btn-link info-link">艺术字在线生成</a></li>
-                                    <li><a href="http://www.bestcssbuttongenerator.com/" target="_blank" class="btn-link info-link">按钮在线生成</a></li>
-                                    <li><a href="https://regexper.com/" target="_blank" class="btn-link info-link">正则表达式</a></li>
-                                    <li><a href="http://www.faviconico.org/favicon" target="_blank" class="btn-link info-link">ico转换</a></li>
-                                    <li><a href="http://tool.lu/css/" target="_blank" class="btn-link info-link">代码压缩1</a></li>
-                                    <li><a href="http://tool.oschina.net/jscompress/" target="_blank" class="btn-link info-link">代码压缩2</a></li>
-                                </ul>
+                            <div class="info-bd-item clearfix">
+                                <h5>前端语言</h5>
+                                <div class="info-ul">
+                                    <ul class="info-list clearfix">
+                                        <li><a href="http://cn.vuejs.org/v2/guide/" target="_blank" class="btn-link info-link">vue</a></li>
+                                        <li><a href="https://angular.io/docs/ts/latest/" target="_blank" class="btn-link info-link">angular</a></li>
+                                        <li><a href="http://www.layui.com/doc/" target="_blank" class="btn-link info-link">layui</a></li>
+                                        <li><a href="https://www.sass.hk/" target="_blank" class="btn-link info-link">sass</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="info-bd-item clearfix">
-                            <h5>UI设计</h5>
-                            <div class="info-ul">
-                                <ul class="info-list clearfix">
-                                    <li><a href="http://www.58pic.com/" target="_blank" class="btn-link info-link">千图网</a></li>
-                                    <li><a href="http://huaban.com/" target="_blank" class="btn-link info-link">花瓣网</a></li>
-                                    <li><a href="http://ibaotu.com/" target="_blank" class="btn-link info-link">包图网</a></li>
-                                    <li><a href="http://www.easyicon.net/" target="_blank" class="btn-link info-link">easyicon</a></li>
-                                    <li><a href="http://www.iconfont.cn/" target="_blank" class="btn-link info-link">iconfont</a></li>
-                                </ul>
+                            <div class="info-bd-item clearfix">
+                                <h5>后台语言</h5>
+                                <div class="info-ul">
+                                    <ul class="info-list clearfix">
+
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="info-bd-item clearfix">
-                            <h5>视频</h5>
-                            <div class="info-ul">
-                                <ul class="info-list clearfix">
-                                    <li><a href="http://www.imooc.com/" target="_blank" class="btn-link info-link">慕课网</a></li>
-                                    <li><a href="http://www.jikexueyuan.com/" target="_blank" class="btn-link info-link">极客学院</a></li>
-                                    <li><a href="http://study.163.com/" target="_blank" class="btn-link info-link">网易云课堂</a></li>
-									<li><a href="http://www.68ps.com/" target="_blank" class="btn-link info-link">PS联盟</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="index-info">
-                    <!--<div class="info-hd">学习文档</div>-->
-                    <div class="mod-dashTit">
-                        <span class="tit"><i class="decorate"></i>学习文档</span>
-                        <span class="line"></span>
-                    </div>
-                    <div class="info-bd">
-                        <div class="info-bd-item clearfix">
-                            <h5>汇总网站</h5>
-                            <div class="info-ul">
-                                <ul class="info-list clearfix">
-                                    <li><a href="http://www.runoob.com/" target="_blank" class="btn-link info-link">runoob</a></li>
-                                    <li><a href="http://www.liaoxuefeng.com/" target="_blank" class="btn-link info-link">廖雪峰</a></li>
-                                    <li><a href="http://www.w3school.com.cn/" target="_blank" class="btn-link info-link">W3school</a></li>
-                                    <li><a href="https://mp.weixin.qq.com/debug/wxadoc/dev/?t=20161102" target="_blank" class="btn-link info-link">微信小程序</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="info-bd-item clearfix">
-                            <h5>前端语言</h5>
-                            <div class="info-ul">
-                                <ul class="info-list clearfix">
-                                    <li><a href="http://cn.vuejs.org/v2/guide/" target="_blank" class="btn-link info-link">vue</a></li>
-                                    <li><a href="https://angular.io/docs/ts/latest/" target="_blank" class="btn-link info-link">angular</a></li>
-                                    <li><a href="http://www.layui.com/doc/" target="_blank" class="btn-link info-link">layui</a></li>
-                                    <li><a href="https://www.sass.hk/" target="_blank" class="btn-link info-link">sass</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="info-bd-item clearfix">
-                            <h5>后台语言</h5>
-                            <div class="info-ul">
-                                <ul class="info-list clearfix">
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="info-bd-item clearfix">
-                            <h5>thinkPHP</h5>
-                            <div class="info-ul">
-                                <ul class="info-list clearfix">
-                                    <li><a href="http://document.thinkphp.cn/manual_3_2.html" target="_blank" class="btn-link info-link">完全开发手册</a></li>
-                                    <li><a href="http://doc.thinkphp.cn/manual.html" target="_blank" class="btn-link info-link">3.1入门</a></li>
-                                    <li><a href="http://www.kancloud.cn/thinkphp/thinkphp_quickstart/2140" target="_blank" class="btn-link info-link">3.2入门</a></li>
-                                    <li><a href="http://www.kancloud.cn/manual/thinkphp5/118003" target="_blank" class="btn-link info-link">5.0入门</a></li>
-                                </ul>
+                            <div class="info-bd-item clearfix">
+                                <h5>thinkPHP</h5>
+                                <div class="info-ul">
+                                    <ul class="info-list clearfix">
+                                        <li><a href="http://document.thinkphp.cn/manual_3_2.html" target="_blank" class="btn-link info-link">完全开发手册</a></li>
+                                        <li><a href="http://doc.thinkphp.cn/manual.html" target="_blank" class="btn-link info-link">3.1入门</a></li>
+                                        <li><a href="http://www.kancloud.cn/thinkphp/thinkphp_quickstart/2140" target="_blank" class="btn-link info-link">3.2入门</a></li>
+                                        <li><a href="http://www.kancloud.cn/manual/thinkphp5/118003" target="_blank" class="btn-link info-link">5.0入门</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
