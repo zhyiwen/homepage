@@ -3,10 +3,6 @@ body{background: url("../img/bg.jpg") no-repeat center center #0e9aef;}
     height: 100%;
     background: rgba(48, 151, 253, 0.5);
 }
-#wrapper2{
-    height: 100%;
-    background: #fff;
-}
 .middle-box h1 {
      font-size: 30px;
 }
@@ -15,3 +11,146 @@ body{background: url("../img/bg.jpg") no-repeat center center #0e9aef;}
 }
 
 /*用户登录*/
+#wrapper2{
+    height: 100%;
+}
+.login-head{
+    height: 100px;
+    background: #fff;
+}
+.login-body{
+    height: calc(100% - 200px);
+    position: relative;
+}
+.login-box{
+    position: absolute;
+    width: 366px;
+    height: 400px;
+    right: 5%;
+    top: 50%;
+    margin-top: -200px;
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 10px;
+    border-radius: 3px;
+}
+.lb-header{
+    position:relative;
+    color: #00415d;
+    margin: 5px 5px 10px 5px;
+    padding-bottom:10px;
+    border-bottom: 1px solid #eee;
+    text-align:center;
+    height:28px;
+}
+.lb-header a{
+    margin: 0 25px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    font-size: 15px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    transition: all 0.1s linear;
+}
+.lb-header .active{
+    font-size: 18px;
+}
+.lb-header a:first-child.active{
+    color: #4cae4c;
+}
+.lb-header a:last-child.active{
+    color: #d43f3a;
+}
+.social-login a{
+    position:relative;
+    float: left;
+    width:calc(40% - 8px);
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 12px;
+    border-radius: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 3%;
+    text-align:center;
+}
+.social-login a i{
+    position: relative;
+    float: left;
+    width: 20px;
+    top: 2px;
+}
+.social-login a:first-child{
+    background-color: #49639F;
+}
+.social-login a:last-child{
+    background-color: #DF4A32;
+}
+.email-login,.email-signup{
+    position:relative;
+    float: left;
+    width: 100%;
+    height:auto;
+    margin-top: 20px;
+    padding: 0 25px;
+}
+.form-group{
+    position: relative;
+}
+
+.yzm {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    height: 34px;
+    overflow: hidden;
+    border-left: 1px solid #ccc;
+}
+span.input-group-addon.zym img {
+    height: 100%;
+}
+.form-check-label{
+    font-size: 12px;
+    font-weight: 100;
+    color: #777;
+    line-height: 20px;
+}
+.btn-partner{
+    border-color: #1CB94E;
+    color: #1CB94E;
+    background: #fff;
+}
+.btn-partner:hover{
+    border-color: #1CB94E;
+    color: #1CB94E;
+    background: #f8f8f8;
+}
+.forgetpass{
+    font-size: 12px;
+    line-height: 20px;
+}
+.logo-img{
+    height: 60px;
+    width: 60px;
+    margin: 0 auto 40px;
+    padding: 10px;
+    background: #2a9a43;
+    border-radius: 50%;
+}
+.logo-img img{
+    width: 100%;
+}
+.login-foot{
+    height: 100px;
+    background: #fff;
+    padding: 20px 0;
+}
+.login-foot p{
+    text-align: center;
+    font-size: 12px;
+    color: #858585;
+    line-height: 40px;
+}
