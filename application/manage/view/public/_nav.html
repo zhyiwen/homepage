@@ -22,12 +22,12 @@
             <li {eq name="manage" value="index"} class="active" {/eq}>
                 <a href="{:url('/manage/index/index')}"><i class="fa fa-home"></i> <span class="nav-label">首页</span></a>
             </li>
-            <li {eq name="manage" value="my_http"} class="active" {/eq}>
-                <a href="#"><i class="fa fa-link"></i> <span class="nav-label">网址管理</span> <span class="fa arrow"></span></a>
+            <li {eq name="manage" value="http"} class="active" {/eq}>
+                <a href="#"><i class="fa fa-internet-explorer"></i> <span class="nav-label">网页收藏</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
-                    <li {eq name="manage" value="ruler_list"} class="active" {/eq}><a href="{:url('/manage/ruler/index')}">网址列表</a></li>
-                    <li {eq name="manage" value="ruler_add"} class="active" {/eq}><a href="{:url('/manage/ruler/add')}">添加网址</a></li>
-                    <li {eq name="manage" value="ruler_setclass"} class="active" {/eq}><a href="{:url('/manage/ruler/set_class')}">分类管理</a></li>
+                    <li {eq name="manage" value="link_list"} class="active" {/eq}><a href="{:url('/manage/link/index')}">网站列表</a></li>
+                    <li {eq name="manage" value="link_add"} class="active" {/eq}><a href="{:url('/manage/link/add')}">添加常用网站</a></li>
+                    <li {eq name="manage" value="link_h_list"} class="active" {/eq}><a href="{:url('/manage/link/heart')}">收藏列表</a></li>
                 </ul>
             </li>
         </ul>

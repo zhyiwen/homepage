@@ -6,28 +6,28 @@
  * Time: 16:30
  */
 
-namespace app\manage\controller;
+namespace app\admin\controller;
 use think\Controller;
 class Ruler extends Controller
 {
     public function index()
     {
-        $this->assign("manage","ruler_list");
+        $this->assign("admin","ruler_list");
         return $this->fetch();
     }
     public function edit()
     {
-        $this->assign("manage","ruler_edit");
+        $this->assign("admin","ruler_edit");
         return $this->fetch();
     }
     public function add()
     {
-        $this->assign("manage","ruler_add");
+        $this->assign("admin","ruler_add");
         return $this->fetch();
     }
     public function set_class()
     {
-        $this->assign("manage","ruler_setclass");
+        $this->assign("admin","ruler_setclass");
         return $this->fetch();
     }
 }

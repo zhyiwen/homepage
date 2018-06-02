@@ -6,7 +6,7 @@
  * Time: 12:42
  */
 
-namespace app\admin\controller;
+namespace app\manage\controller;
 
 
 use think\Controller;
@@ -15,22 +15,22 @@ class Link extends Controller
 {
     public function index()
     {
-        $this->assign("admin","link_list");
+        $this->assign("manage","link_list");
         return $this->fetch();
     }
     public function edit()
     {
-        $this->assign("admin","link_edit");
+        $this->assign("manage","link_edit");
         return $this->fetch();
     }
     public function add()
     {
-        $this->assign("admin","link_add");
+        $this->assign("manage","link_add");
         return $this->fetch();
     }
     public function heart()
     {
-        $this->assign("admin","link_h_list");
+        $this->assign("manage","link_h_list");
         return $this->fetch();
     }
 }
