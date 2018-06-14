@@ -165,7 +165,7 @@ ul.actions li:last-child {
     border-color: #c9defb;
 }
 .info1-list li {
-    text-align: center;
+    /*text-align: center;*/
     color: #363636;
     line-height: 30px;
     word-break: break-all;
