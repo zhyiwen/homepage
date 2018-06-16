@@ -112,10 +112,10 @@ ul.actions li:last-child {
 .index-main{
     padding-top: 1.25rem;
     color: #636363;
-    background-image: url("../images/bg.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-color: #ede9e8;
+    /*background-image: url("../images/bg.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: top center;*/
+    /*background-color: #ede9e8;*/
 }
 .index-main .index-info-search{
     background: linear-gradient(to top,#f6f6f6,#fcfcfc);
