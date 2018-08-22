@@ -4,216 +4,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人主页后台管理中心</title>
-    {css href="/static/admin/css/bootstrap.min.css,/static/admin/font-awesome/css/font-awesome.css,/static/admin/css/animate.css,/static/admin/css/style.css,/static/admin/css/zyw.css,/static/admin/css/login.css" /}
+    {css href="/static/admin/css/login.css" /}
 </head>
 <body>
-<div id="wrapper2">
-    <div class="login-head"></div>
-    <div class="login-body">
-        <div class="login-box clearfix">
-            <div class="lb-header">
-                <a href="#" class="active" id="login-box-link">用户登录</a>
-                <a href="#" id="signup-box-link">用户注册</a>
-            </div>
-            <form class="email-login">
-                <div class="form-group">
-                    <div class="logo-img">
-                        <img src="img/logo-text.png" alt="">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="手机号">
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="密码">
-                </div>
-                <div class="form-check checkbox">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox"> 记住密码
-                    </label>
-                    <a href="#" class="pull-right forgetpass">忘记密码？</a>
-                </div>
-                <button type="submit" class="btn btn-danger btn-block">登录</button>
-            </form>
-            <form class="email-signup">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="手机号">
-                </div>
-                <div class="form-group code">
-                    <input type="text" class="form-control input-val" placeholder="图片验证码">
-                    <canvas id="canvas" width="100" height="34" class="yzm"></canvas>
-                </div>
-                <div class="form-group">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="短信验证码">
-                        <span class="input-group-btn">
-					<input id="btnSendCode" type="button" value="获取验证码" onClick="sendMessage()" class="btn btn-success"/>
-			    </span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="设置密码">
-                </div>
-                <div class="form-check checkbox">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox"> 我已阅读并接受 <a href="">《邻家用户使用协议》</a>
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-success btn-block" id="btns">注册</button>
-                <a type="submit" class="btn btn-default btn-block btn-partner" href="partnerRegister.html" target="_blank">注册社区合伙人</a>
-            </form>
+<div class="login-container">
+    <h1>jQuery带背景切换登录注册表单</h1>
+
+    <div class="connect">
+        <p>www.17sucai.com</p>
+    </div>
+
+    <form action="" method="post" id="loginForm">
+        <div>
+            <input type="text" name="username" class="username" placeholder="用户名" autocomplete="off"/>
         </div>
-    </div>
-    <div class="login-foot">
-        <p>CopyRight©2018 blskye zyw Inc.鲁ICP备16010845号</p>
-    </div>
+        <div>
+            <input type="password" name="password" class="password" placeholder="密码" oncontextmenu="return false" onpaste="return false" />
+        </div>
+        <button id="submit" type="submit">登 陆</button>
+    </form>
+
+    <a href="register.html">
+        <button type="button" class="register-tis">还有没有账号？</button>
+    </a>
+
 </div>
 
-{js href="/static/admin/js/jquery-2.1.1.js,/static/admin/js/bootstrap.min.js"}
-<script>
-
-    $(function(){
-        var show_num = [];
-        draw(show_num);
-
-        $("#canvas").on('click',function(){
-            draw(show_num);
-        });
-        $(".btn").on('click',function(){
-            var val = $(".input-val").val().toLowerCase();
-            var num = show_num.join("");
-            if(val==''){
-                alert('请输入验证码！');
-            }else if(val == num){
-                alert('提交成功！');
-                $(".input-val").val('');
-                draw(show_num);
-
-            }else{
-                alert('验证码错误！请重新输入！');
-                $(".input-val").val('');
-                draw(show_num);
-            }
-        })
-    })
-
-    function draw(show_num) {
-        var canvas_width=$('#canvas').width();
-        var canvas_height=$('#canvas').height();
-        var canvas = document.getElementById("canvas");//获取到canvas的对象，演员
-        var context = canvas.getContext("2d");//获取到canvas画图的环境，演员表演的舞台
-        canvas.width = canvas_width;
-        canvas.height = canvas_height;
-        var sCode = "A,B,C,E,F,G,H,J,K,L,M,N,P,Q,R,S,T,W,X,Y,Z,1,2,3,4,5,6,7,8,9,0";
-        var aCode = sCode.split(",");
-        var aLength = aCode.length;//获取到数组的长度
-
-        for (var i = 0; i <= 3; i++) {
-            var j = Math.floor(Math.random() * aLength);//获取到随机的索引值
-            var deg = Math.random() * 30 * Math.PI / 180;//产生0~30之间的随机弧度
-            var txt = aCode[j];//得到随机的一个内容
-            show_num[i] = txt.toLowerCase();
-            var x = 10 + i * 20;//文字在canvas上的x坐标
-            var y = 20 + Math.random() * 8;//文字在canvas上的y坐标
-            context.font = "bold 23px 微软雅黑";
-
-            context.translate(x, y);
-            context.rotate(deg);
-
-            context.fillStyle = randomColor();
-            context.fillText(txt, 0, 0);
-
-            context.rotate(-deg);
-            context.translate(-x, -y);
-        }
-        for (var i = 0; i <= 5; i++) { //验证码上显示线条
-            context.strokeStyle = randomColor();
-            context.beginPath();
-            context.moveTo(Math.random() * canvas_width, Math.random() * canvas_height);
-            context.lineTo(Math.random() * canvas_width, Math.random() * canvas_height);
-            context.stroke();
-        }
-        for (var i = 0; i <= 30; i++) { //验证码上显示小点
-            context.strokeStyle = randomColor();
-            context.beginPath();
-            var x = Math.random() * canvas_width;
-            var y = Math.random() * canvas_height;
-            context.moveTo(x, y);
-            context.lineTo(x + 1, y + 1);
-            context.stroke();
-        }
-    }
-
-    function randomColor() {//得到随机的颜色值
-        var r = Math.floor(Math.random() * 256);
-        var g = Math.floor(Math.random() * 256);
-        var b = Math.floor(Math.random() * 256);
-        return "rgb(" + r + "," + g + "," + b + ")";
-    }
-</script>
-<script>
-    // 登录
-    $(".email-signup").hide();
-    $("#login-box-link").click(function(){
-        $(".email-login").delay(100).fadeIn(100);
-        $(".email-signup").fadeOut(100);
-        $("#login-box-link").addClass("active");
-        $("#signup-box-link").removeClass("active");
-    });
-    $("#signup-box-link").click(function(){
-        $(".email-login").fadeOut(100);
-        $(".email-signup").delay(100).fadeIn(100);
-        $("#login-box-link").removeClass("active");
-        $("#signup-box-link").addClass("active");
-    });
-    // 获取验证码倒计时
-    var InterValObj; //timer变量，控制时间
-    var count = 30; //间隔函数，1秒执行
-    var curCount;//当前剩余秒数
-    var code = ""; //验证码
-    var codeLength = 6;//验证码长度
-    function sendMessage() {
-        curCount = count;
-        var dealType; //验证方式
-        var uid=$("#uid").val();//用户uid
-        if ($("#phone").attr("checked") == true) {
-            dealType = "phone";
-        }
-        else {
-            dealType = "email";
-        }
-//产生验证码
-        for (var i = 0; i < codeLength; i++) {
-            code += parseInt(Math.random() * 9).toString();
-        }
-//设置button效果，开始计时
-        $("#btnSendCode,#btnSendCode2").attr("disabled", "true");
-        $("#btnSendCode,#btnSendCode2").val( + curCount + "秒再获取");
-        InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
-//向后台发送处理数据
-        $.ajax({
-            type: "POST", //用POST方式传输
-            dataType: "text", //数据格式:JSON
-            url: 'Login.ashx', //目标地址
-            data: "dealType=" + dealType +"&uid=" + uid + "&code=" + code,
-            error: function (XMLHttpRequest, textStatus, errorThrown) { },
-            success: function (msg){ }
-        });
-    }
-    //timer处理函数
-    function SetRemainTime() {
-        if (curCount == 0) {
-            window.clearInterval(InterValObj);//停止计时器
-            $("#btnSendCode,#btnSendCode2").removeAttr("disabled");//启用按钮
-            $("#btnSendCode,#btnSendCode2").val("重新发送验证码");
-            code = ""; //清除验证码。如果不清除，过时间后，输入收到的验证码依然有效
-        }
-        else {
-            curCount--;
-            $("#btnSendCode,#btnSendCode2").val( + curCount + "秒再获取");
-        }
-    }
-</script>
+{js href="/static/admin/js/jquery-2.1.1.js,/static/admin/js\plugins/common/common.js,/static/admin/js\plugins/common/supersized.3.2.7.min.js,/static/admin/js\plugins/common/supersized-init.js,\static\admin\js\plugins\validate\jquery.validate.min.js"}
 </body>
 
 </html>
