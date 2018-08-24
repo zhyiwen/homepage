@@ -28,9 +28,4 @@ class Link extends Controller
         $this->assign("manage","link_add");
         return $this->fetch();
     }
-    public function heart()
-    {
-        $this->assign("manage","link_h_list");
-        return $this->fetch();
-    }
 }

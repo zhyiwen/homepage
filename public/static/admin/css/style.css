@@ -8120,7 +8120,7 @@ body.md-skin {
   }
   .navbar-static-side {
     z-index: 2001;
-    position: absolute;
+    position: fixed;
     width: 220px;
   }
   .navbar-top-links .dropdown-messages,

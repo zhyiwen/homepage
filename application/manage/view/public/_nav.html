@@ -23,12 +23,14 @@
                 <a href="{:url('/manage/index/index')}"><i class="fa fa-home"></i> <span class="nav-label">首页</span></a>
             </li>
             <li {eq name="manage" value="http"} class="active" {/eq}>
-                <a href="#"><i class="fa fa-internet-explorer"></i> <span class="nav-label">网页收藏</span><span class="fa arrow"></span></a>
+                <a href="#"><i class="fa fa-link"></i> <span class="nav-label">我的网站</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
                     <li {eq name="manage" value="link_list"} class="active" {/eq}><a href="{:url('/manage/link/index')}">网站列表</a></li>
                     <li {eq name="manage" value="link_add"} class="active" {/eq}><a href="{:url('/manage/link/add')}">添加常用网站</a></li>
-                    <li {eq name="manage" value="link_h_list"} class="active" {/eq}><a href="{:url('/manage/link/heart')}">收藏列表</a></li>
                 </ul>
+            </li>
+            <li {eq name="manage" value="link_h_list"} class="active" {/eq}>
+            <a href="{:url('/manage/heart/index')}"><i class="fa fa-internet-explorer"></i> <span class="nav-label">收藏网址</span></a>
             </li>
         </ul>
     </div>
