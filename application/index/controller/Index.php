@@ -11,6 +11,9 @@ class Index extends Controller
 //        $this->assign("appoint","index");
         return $this->fetch();
     }
+    public function mindex(){
+        return $this->fetch();
+    }
     public function heart(){
         return $this->fetch();
     }

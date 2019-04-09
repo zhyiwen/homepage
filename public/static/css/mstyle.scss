@@ -1,0 +1,155 @@
+.weath {
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35px;
+  -webkit-transition: background-image 0.5s;
+  transition: background-image 0.5s;
+  background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath/sunny_218a53c.png);
+  &[data-class="cloudy"],
+  &.cloudy {
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath/cloudy_a0964f3.png);
+  }
+
+  &[data-class="cloudy2"],
+  &.cloudy2 {
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath/cloudy2_4f237f5.png);
+  }
+
+  &[data-class="cloudy_night"],
+  &.cloudy_night {
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath/cloudy_night_10c0f05.png);
+  }
+
+  &[data-class="cloudy2_night"],
+  &.cloudy2_night {
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath/cloudy2_night_10c0f05.png);
+  }
+
+  &[data-class="foggy"],
+  &.foggy {
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath/foggy_46375ba.png);
+  }
+
+  &[data-class="foggy_night"],
+  &.foggy_night {
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath/foggy_night_9194acc.png);
+  }
+
+  &[data-class="rain"],
+  &.rain {
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath/rain_1cb6aca.png);
+  }
+
+  &[data-class="snow"],
+  &.snow {
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath/snow_efe4d0d.png);
+  }
+
+  &[data-class="sunny_night"],
+  &.sunny_night {
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath/sunny_night_dfaa70a.png);
+  }
+
+  &[data-class="thunder"],
+  &.thunder {
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath/thunder_90250b9.png);
+  }
+
+  &[data-class="tornado"],
+  &.tornado {
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath/tornado_231e355.png);
+  }
+}
+
+.weath_bg {
+  background-color: #4ac7f5;
+  &.show {
+    background-color: transparent;
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath_bg/sunny_6345fbc.jpg);
+  }
+
+  &.show.cloudy {
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath_bg/cloudy_7474b6e.jpg);
+  }
+
+  &.show.cloudy2 {
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath_bg/cloudy2_db0c188.jpg);
+  }
+
+  &.show.foggy {
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath_bg/foggy_6a03d30.jpg);
+  }
+
+  &.show.rain {
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath_bg/rain_93b94d7.jpg);
+  }
+
+  &.show.snow {
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath_bg/snow_2d29d43.jpg);
+  }
+
+  &.show.thunder {
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath_bg/thunder_4ed0d04.jpg);
+  }
+
+  &.show[data-class*="night"] {
+    background-image: url(https://gss0.bdstatic.com/5eR1cXSg2QdV5wybn9fN2DJv/assets/wise-vue/img/icon/weath_bg/night_a04a3ea.jpg);
+  }
+
+  &[data-class="cloudy"] {
+    background-color: #7eccf2;
+  }
+
+  &[data-class="cloudy2"] {
+    background-color: #a3cadb;
+  }
+
+  &[data-class="foggy"] {
+    background-color: #a7a09a;
+  }
+
+  &[data-class="rain"] {
+    background-color: #89a0ae;
+  }
+
+  &[data-class="snow"] {
+    background-color: #96c3fa;
+  }
+
+  &[data-class="sunny"] {
+    background-color: #4ac7f5;
+  }
+
+  &[data-class="thunder"] {
+    background-color: #2f4a65;
+  }
+
+  &[data-class*="night"] {
+    background-color: #034e8f;
+  }
+}
+
+.head-top {
+  .head-logo {
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    img {
+      height: 100%;
+    }
+  }
+  .head-weather {
+    color: #fff;
+    span {
+      margin-right: 10px;
+    }
+    strong {
+      font-size: 16px;
+      margin-right: 10px;
+      vertical-align: middle;
+      font-weight: 400;
+    }
+  }
+}
